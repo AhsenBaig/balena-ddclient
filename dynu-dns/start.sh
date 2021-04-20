@@ -5,7 +5,7 @@ if [[ ! -e "/serverfiles/dynuiuc.conf" ]]; then
   printf "%s\n" "Copying config"
 
   # cp /etc/dynuiuc/dynuiuc.conf /serverfiles/dynuiuc.conf
-  cp /etc/ddclient.conf /serverfiles/dynuiuc.conf
+  cp /etc/ddclient.conf /serverfiles/ddclient.conf
 fi
 
-exec /usr/sbin/ddclient -daemon 300 -syslog -file /serverfiles/dynuiuc.conf
+exec /usr/sbin/ddclient -daemon 300 -syslog -file /serverfiles/ddclient.conf
