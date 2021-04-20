@@ -1,4 +1,4 @@
 type: generic
 upstream:
-  - repo: balena-dd
+  - repo: balena-ddclient
     url: https://github.com/AhsenBaig-forks/balena-ddclient
