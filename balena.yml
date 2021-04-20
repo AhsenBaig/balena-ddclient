@@ -1,0 +1,18 @@
+name: "dynudns"
+description: "Build a dynudns using a Raspberry Pi 4! Supports common Servers, SCP, and RCON Connect."
+type: "sw.application"
+assets:
+  repository:
+    type: "blob.asset"
+    data:
+      url: "https://github.com/AhsenBaig-forks/balena-ddclient"
+  logo:
+    type: "blob.asset"
+    data:
+      url: "https://raw.githubusercontent.com/AhsenBaig-forks/balena-ddclient/master/logo.png"
+data:
+  applicationEnvironmentVariables:
+  defaultDeviceType: "raspberrypi4-64"
+  supportedDeviceTypes:
+    - "raspberrypi4-64"
+    - "jetson-nano"
