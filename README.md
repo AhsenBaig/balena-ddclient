@@ -1,5 +1,3 @@
-![Balena Server Logo](images/logo.png)
-
 # ddclient
 **Starter project enabling you to use Dynamic DNS services like dynu.org, DuckDNS.org noip.com, etc..**
 
