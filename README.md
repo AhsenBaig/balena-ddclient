@@ -1,15 +1,15 @@
 ![Balena Server Logo](images/logo.png)
 
-# Dynu-dns
-**Starter project enabling you a Dynu-dns.**
+# ddclient
+**Starter project enabling you to use Dynamic DNS services like dynu.org, DuckDNS.org noip.com, etc..**
 
-This project has been tested on a Raspberry Pi 4 B 4GB
+This project has been tested on a Raspberry Pi 4 B 2GB & 4GB
 
 ## Hardware required
 
-* Raspberry Pi 4B (We recommend the 4GB or the 8GB model. 1GB is not enough!) or Nvidia Jetson Nano
-* A fan or cooling system to prevent lag caused by throttling
-* A 16GB or greater micro SD Card (We always recommend SanDisk Extreme Pro SD cards)
+* Raspberry Pi 4B (We recommend the 2GB or the 4GB model, 1GB should be enough) or Nvidia Jetson Nano
+* A fan or cooling system as this is running 24/7
+* A 2GB or greater micro SD Card (We always recommend SanDisk Extreme Pro SD cards)
 * Power supply
 
 ## Software required
@@ -45,15 +45,12 @@ You can deploy this server with one click with the button below. Or, you can fol
 
 ## Connect to the server :satellite:
 
-Balena dynu-dns Server sets automatically your Server hostname to `dynudns.local`. It is the address the from your server. You can connect to it like this:
-
-**Note:** The IP address also works.
+It is the IP address the from your server.
 
 Now you have a balenaServer :sunglasses::
 
 ## Connect to the terminal :satellite:
 
-The server has no console input option in the cloud dashboard, so you need `RCON`. The port is `25575` and the password is `balena`. It is a protocol for connecting to the server.
 There are many clients, but you can pick one here:
 
 ## Connect to the file-directory :satellite:
@@ -61,11 +58,6 @@ There are many clients, but you can pick one here:
 You can connect to the server and change your serverfiles. I recommend using a tool like [WinSCP](https://winscp.net/) or if you are using OSX or a linux distribution you can use [Filezilla](https://filezilla-project.org/).  The IP Address to connect to is “dynudns” (without the quotes), the protocol to choose is SCP (If you got the choice), the port number is 22, the username is “root” (again, without the quotes) and the password is “balena” (no quotes). The files are in the folder named “serverfiles” at the root directory, you can double click to open that directory and browse the files in there.
 
 **NOTE:** You can also change your SCP password by setting the `SCP_PASSWORD` Environment Variable within balenaCloud.  On the left, simply click on “Device Variables” and then click the “Add Variable” button. Give it a name of `SCP_PASSWORD`, and set the value to your password. 
-
-## Change hostname
-You can change the hostname by defining the DEVICE_HOSTNAME Environment Variable within balenaCloud.
-
-**NOTE:** If you decide to change the hostname, you will have to use your new hostname within dynudns to connect to the server, instead of `dynudns.local`.
 
 ## Custom RAM (optional) :link:
 
