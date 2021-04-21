@@ -1,5 +1,5 @@
 name: "dynudns"
-description: "Build a dynudns using a Raspberry Pi 4! Supports common Servers, SCP, and RCON Connect."
+description: "Build a dynamic dns client using a Raspberry Pi 4! Supports common Server: SCP."
 type: "sw.application"
 assets:
   repository:
