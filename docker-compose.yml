@@ -12,15 +12,7 @@ services:
       - servercache:/servercache
     ports:
       - "22:22/udp"
-      - "22:22/tcp"  
-  balena-rcon:
-    network_mode: host
-    restart: always
-    build: ./balena-rcon
-    privileged: true
-    ports:
-      - "25575:25575/udp"
-      - "25575:25575/tcp"
+      - "22:22/tcp"
   ddclient:
     network_mode: host
     restart: on-failure
